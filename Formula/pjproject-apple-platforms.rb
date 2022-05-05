@@ -1,13 +1,14 @@
 class PjprojectApplePlatforms < Formula
   desc "PJSIP project on Apple platforms"
   homepage "https://github.com/oliverepper/pjproject-apple-platforms"
-  url "https://github.com/oliverepper/pjproject-apple-platforms/archive/refs/tags/0.1.tar.gz"
-  sha256 "53338006ce703fb39d286cbe95d55b1bdf79ac8671389dbdc7628a8966e3cced"
+  url "https://github.com/oliverepper/pjproject-apple-platforms/archive/refs/tags/0.2.tar.gz"
+  sha256 "aa67a227fa4e9c932f527cc98a0fe0c66aedceff732af3397ad87d3209779a8e"
   license "MIT"
 
   bottle do
-    root_url 'https://github.com/oliverepper/pjproject-apple-platforms/releases/download/0.1'
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "dc848e983f7e474ec9abe061aef5671e82f7dab38a0cf67caf3beeefbd2a25d1"
+    root_url 'https://github.com/oliverepper/pjproject-apple-platforms/releases/download/0.2'
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "b561bac0f257d0078354976ef576c21bfcbc11d8ea6546074883f60bf094ae8a"
+    sha256 cellar: :any_skip_relocation, monterey: "b561bac0f257d0078354976ef576c21bfcbc11d8ea6546074883f60bf094ae8a"
   end
 
   def install
