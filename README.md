@@ -29,8 +29,9 @@ clang -isysroot $(xcode-select -p)/Platforms/MacOSX.platform/Developer/SDKs/MacO
 
 run:
 
-```
+```sh
 ./pjsip-test
+```
 
 You should see:
 
