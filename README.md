@@ -7,7 +7,7 @@
 Create a minimal program:
 
 ```sh
-echo << EOF > pjsip-test.m
+cat << EOF > pjsip-test.m
 #define PJ_AUTOCONF 1
 
 #include <pjsua.h>
@@ -21,13 +21,16 @@ int main()
 EOF
 ```
 
-and then compile and run:
+compile:
 
 ```sh
 clang -isysroot $(xcode-select -p)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk `pkg-config --libs --cflags pjproject-apple-platforms` -o pjsip-test pjsip-test.m
-
-./pjsip-test
 ```
+
+run:
+
+```
+./pjsip-test
 
 You should see:
 
