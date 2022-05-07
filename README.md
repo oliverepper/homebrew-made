@@ -2,7 +2,9 @@
 
 `brew tap oliverepper/made`
 
-## Test the package
+## pjproject-apple-platforms
+
+`brew install pjproject-apple-platforms`
 
 Create a minimal program:
 
