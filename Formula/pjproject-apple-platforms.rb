@@ -1,16 +1,16 @@
 class PjprojectApplePlatforms < Formula
   desc "PJSIP project on Apple platforms"
   homepage "https://github.com/oliverepper/pjproject-apple-platforms"
-  url "https://github.com/oliverepper/pjproject-apple-platforms/archive/refs/tags/0.2.tar.gz"
-  sha256 "aa67a227fa4e9c932f527cc98a0fe0c66aedceff732af3397ad87d3209779a8e"
+  url "https://github.com/oliverepper/pjproject-apple-platforms/archive/refs/tags/0.3.tar.gz"
+  sha256 "b44cd5fccdffc6760fca42a2d0e6f12d12482a9cd6b645c77cb363869f6c4220"
   license "MIT"
 
   bottle do
-    root_url 'https://github.com/oliverepper/pjproject-apple-platforms/releases/download/0.2'
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "b561bac0f257d0078354976ef576c21bfcbc11d8ea6546074883f60bf094ae8a"
-    sha256 cellar: :any_skip_relocation, monterey: "b561bac0f257d0078354976ef576c21bfcbc11d8ea6546074883f60bf094ae8a"
+    root_url 'https://github.com/oliverepper/pjproject-apple-platforms/releases/download/0.3'
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "9644915dfa9d382067992bf8b973a8042c1f203d187554517b9fd473bda93854"
+    sha256 cellar: :any_skip_relocation, monterey: "9644915dfa9d382067992bf8b973a8042c1f203d187554517b9fd473bda93854"
   end
-
+  
   def install
     ENV.deparallelize # IMPORTANT!
     # there might be a better way
