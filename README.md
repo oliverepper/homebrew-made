@@ -3,6 +3,7 @@
 `brew tap oliverepper/made`
 
 ## pjproject-apple-platforms
+PjSIP Project build for MacOS (Intel and Apple Silicon) and iPhone (Device and Simulator on Apple Silicon)
 
 `brew install pjproject-apple-platforms`
 
