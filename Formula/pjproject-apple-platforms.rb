@@ -1,14 +1,15 @@
 class PjprojectApplePlatforms < Formula
   desc "PJSIP project on Apple platforms"
   homepage "https://github.com/oliverepper/pjproject-apple-platforms"
-  url "https://github.com/oliverepper/pjproject-apple-platforms/archive/refs/tags/0.4.tar.gz"
-  sha256 "dec68fce1893a4e26c29ab9a1de6a5a6bbbfc13da04ee846b60bc6d1bb76f3f3"
+  url "https://github.com/oliverepper/pjproject-apple-platforms.git", tag: 0.5
   license "MIT"
+  head "https://github.com/oliverepper/pjproject-apple-platforms.git", branch: "main"
+  # sha256 "6084cf12da5a97475375d281d0ecd96bb745a48b9aa61a23f7064da9262e60da"
 
   bottle do
-    root_url 'https://github.com/oliverepper/pjproject-apple-platforms/releases/download/0.4'
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "addd9dbc6bf8047112f17b841d6861c208ec2454b5c052a5c001da68fcb6a6af"
-    sha256 cellar: :any_skip_relocation, monterey: "addd9dbc6bf8047112f17b841d6861c208ec2454b5c052a5c001da68fcb6a6af"
+    root_url 'https://github.com/oliverepper/pjproject-apple-platforms/releases/download/0.5'
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "0d62ed2306e1c4a90d33b02518c48b6b6005672baa5c15015f5a75f4f34a2b50"
+    sha256 cellar: :any_skip_relocation, monterey: "0d62ed2306e1c4a90d33b02518c48b6b6005672baa5c15015f5a75f4f34a2b50"
   end
   
   def install
