@@ -7,7 +7,7 @@ class OpusApplePlatforms < Formula
   
   bottle do
     root_url 'https://github.com/oliverepper/opus-apple-platforms/releases/download/0.1'
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "5ae3f606cf48ac5a4f1904e23be022105675d8170aa0417313da91e4eed47de6"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "af2383f9457e180c68ebbc7e5136a461c55aa0aa1bb43f9a09c3620f4d01c76a"
   end
 
   depends_on "autoconf" => [:build]
