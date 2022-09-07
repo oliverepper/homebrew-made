@@ -1,13 +1,13 @@
 class OpusApplePlatforms < Formula
   desc "Opus codec on Apple platforms"
   homepage "https://github.com/oliverepper/opus-apple-platforms"
-  url "https://github.com/oliverepper/opus-apple-platforms.git", tag: '0.1.1'
+  url "https://github.com/oliverepper/opus-apple-platforms.git", tag: '0.1.2'
   license "MIT"
   head "https://github.com/oliverepper/opus-apple-platforms.git", branch: "main"
   
   bottle do
-    root_url 'https://github.com/oliverepper/opus-apple-platforms/releases/download/0.1.1'
-    sha256 cellar: :any, arm64_monterey: "0a38d1af6fdb0b51fae6c4f01d5bfa5a8ad2fe9e75fcc9991291a2ced74333f8"
+    root_url 'https://github.com/oliverepper/opus-apple-platforms/releases/download/0.1.2'
+    sha256 cellar: :any, arm64_monterey: "8b0431ee029694f6e24b7bec15966bf7711b71208d9bdb589a27a109746f3cd8"
   end
 
   depends_on "autoconf" => [:build]
