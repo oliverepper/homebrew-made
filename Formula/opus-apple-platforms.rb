@@ -1,13 +1,13 @@
 class OpusApplePlatforms < Formula
   desc "Opus codec on Apple platforms"
   homepage "https://github.com/oliverepper/opus-apple-platforms"
-  url "https://github.com/oliverepper/opus-apple-platforms.git", tag: '0.1.2'
+  url "https://github.com/oliverepper/opus-apple-platforms.git", tag: '0.2'
   license "MIT"
   head "https://github.com/oliverepper/opus-apple-platforms.git", branch: "main"
   
   bottle do
-    root_url 'https://github.com/oliverepper/opus-apple-platforms/releases/download/0.1.2'
-    sha256 cellar: :any, arm64_monterey: "8b0431ee029694f6e24b7bec15966bf7711b71208d9bdb589a27a109746f3cd8"
+    root_url 'https://github.com/oliverepper/opus-apple-platforms/releases/download/0.2'
+    sha256 cellar: :any, arm64_monterey: "d227ae11300fd89c2ad3add8a4bb098c4dcd5e88b143984a4f53b75577b00b7b"
   end
 
   depends_on "autoconf" => [:build]
@@ -21,8 +21,7 @@ class OpusApplePlatforms < Formula
     # there might be a better way
     ENV["CC"] = "/usr/bin/clang"
     ENV["CXX"] = "/usr/bin/clang++"
-    system "sh", "start.sh"
-    system "sh", ".install.sh", prefix.to_s
+    system "sh", "start.sh", prefix.to_s
   end
 
   test do
