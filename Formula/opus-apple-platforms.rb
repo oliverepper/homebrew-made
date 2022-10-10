@@ -13,6 +13,8 @@ class OpusApplePlatforms < Formula
   depends_on "cmake" => [:build]
   depends_on :xcode
 
+  conflicts_with "opus", because: "both install the same libraries and headers"
+
   def install
     ENV.deparallelize # IMPORTANT!
     # there might be a better way
