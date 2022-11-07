@@ -1,15 +1,16 @@
 class PjprojectApplePlatforms < Formula
   desc "PJSIP project on Apple platforms"
   homepage "https://github.com/oliverepper/pjproject-apple-platforms"
-  url "https://github.com/oliverepper/pjproject-apple-platforms.git", tag: '0.9'
+  url "https://github.com/oliverepper/pjproject-apple-platforms.git", tag: '0.10'
   license "MIT"
   head "https://github.com/oliverepper/pjproject-apple-platforms.git", branch: "main"
 
   bottle do
-    root_url 'https://github.com/oliverepper/pjproject-apple-platforms/releases/download/0.9'
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "0c92b7d29f03ea6a0b3dcdb3c056a239ea9005a7ce4d42b10ff6a01477f97c74"
+    root_url 'https://github.com/oliverepper/pjproject-apple-platforms/releases/download/0.10'
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "9489047a40b5dcf033d65a409a5bcc2862675cb094afc72dba3418ab4fe0efca"
   end
 
+  depends_on "cmake" => [:build]
   depends_on :xcode
   
   def install
